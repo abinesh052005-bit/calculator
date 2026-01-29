@@ -5,18 +5,18 @@
 <title>Advanced Glass Calculator</title>
 <style>
 :root {
-    --bg1: #0f2027;
-    --bg2: #203a43;
-    --bg3: #2c5364;
-    --glass: rgba(255,255,255,0.1);
+    --bg1: #1a1a2e;          /* dark blue */
+    --bg2: #162447;          /* navy purple */
+    --bg3: #1f4068;          /* deep blue */
+    --glass: rgba(255,255,255,0.08);
     --border: rgba(255,255,255,0.2);
-    --btn: rgba(255,255,255,0.15);
+    --btn: rgba(255,255,255,0.12);
     --btn-hover: rgba(255,255,255,0.25);
-    --operator: #ff9f1a;
-    --equal: #1dd1a1;
-    --clear: #ee5253;
+    --operator: #ff6f91;     /* pink neon */
+    --equal: #08f7fe;        /* cyan neon */
+    --clear: #ff9472;        /* orange neon */
     --text: #ffffff;
-    --display: #00ffcc;
+    --display: #00ffe7;      /* neon cyan for display */
     --shadow: rgba(0,0,0,0.5);
 }
 
@@ -48,10 +48,10 @@ body {
     transform: translate(-50%, -50%);
     width: 100%;
     max-width: 400px;
-    padding: 25px;
+    padding: 30px;
     border-radius: 25px;
     background: var(--glass);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(25px);
     border: 1px solid var(--border);
     box-shadow: 0 25px 50px var(--shadow);
 }
@@ -60,7 +60,7 @@ body {
 .display {
     width: 100%;
     height: 80px;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.5);
     border: none;
     border-radius: 20px;
     color: var(--display);
@@ -69,6 +69,7 @@ body {
     text-align: right;
     margin-bottom: 20px;
     letter-spacing: 1px;
+    text-shadow: 0 0 5px var(--display);
 }
 
 /* Buttons Grid */
@@ -102,6 +103,7 @@ button:hover {
     background: var(--operator);
     color: #000;
     font-weight: bold;
+    box-shadow: 0 0 10px var(--operator);
 }
 
 /* Equal button */
@@ -110,6 +112,7 @@ button:hover {
     background: var(--equal);
     color: #000;
     font-weight: bold;
+    box-shadow: 0 0 15px var(--equal);
 }
 
 /* Clear button */
@@ -117,6 +120,7 @@ button:hover {
     background: var(--clear);
     color: #000;
     font-weight: bold;
+    box-shadow: 0 0 12px var(--clear);
 }
 
 /* Function buttons */
@@ -124,6 +128,7 @@ button.function-btn {
     background: rgba(255,255,255,0.2);
     color: #fff;
     font-weight: bold;
+    box-shadow: 0 0 5px #fff;
 }
 
 /* Mobile responsiveness */
